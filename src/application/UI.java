@@ -6,7 +6,7 @@ public class UI {
     
    public static void printBoard(ChessPiece[][] pieces){
     for (int i = 0; i < pieces.length; i++){
-        System.out.print((8 - i) + " "); // Use print instead of println
+        System.out.print((8 - i) + " "); 
         for (int j = 0; j < pieces[i].length; j++){
             printPiece(pieces[i][j]);
         }
@@ -17,10 +17,10 @@ public class UI {
 
 private static void printPiece(ChessPiece piece){
     if (piece == null) {
-        System.out.print("- "); // Use print instead of println
+        System.out.print("- "); 
     }
     else {
-        System.out.print(piece + " "); // Use print instead of println
+        System.out.print(piece + " "); 
     }
 }
 }
